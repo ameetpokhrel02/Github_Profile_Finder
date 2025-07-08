@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: #f6f8fa;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app-dark {
+  background: #181c24;
+  color: #f3f4f6;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.toggle-btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.app-dark .toggle-btn {
+  background: #23272f;
+  color: #f3f4f6;
+  border: 1px solid #444;
+}
+.toggle-btn:hover {
+  background: #e5e7eb;
+}
+.app-dark .toggle-btn:hover {
+  background: #2c313a;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 32px;
+}
+.search-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+}
+.app-dark .search-input {
+  background: #23272f;
+  color: #f3f4f6;
+  border: 1px solid #444;
+}
+.search-btn {
+  padding: 10px 18px;
+  border: 1px solid #d0d7de;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  background: #2da44e;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-btn:hover {
+  background: #218838;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(140, 149, 159, 0.15);
+  padding: 32px 24px;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+}
+.app-dark .profile-card {
+  background: #23272f;
+  color: #f3f4f6;
+}
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 4px solid #d0d7de;
+}
+.app-dark .profile-avatar {
+  border: 4px solid #444;
+}
+.profile-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+.profile-username {
+  color: #57606a;
+  margin-bottom: 8px;
+}
+.app-dark .profile-username {
+  color: #b1b5bb;
+}
+.profile-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.badge {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  color: #fff;
+}
+.badge-repo { background: #6f42c1; }
+.badge-follower { background: #e255a1; }
+.badge-following { background: #2da44e; }
+
+.profile-info {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1rem;
+}
+.app-dark .profile-info {
+  color: #b1b5bb;
+}
+.profile-link {
+  color: #0969da;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.profile-link:hover {
+  color: #218838;
+}
+
+.profile-dates {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+}
+.app-dark .profile-dates {
+  color: #b1b5bb;
+}
+
+.section-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(140, 149, 159, 0.10);
+  padding: 24px 20px;
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 32px;
+  transition: background 0.3s, color 0.3s;
+}
+.app-dark .section-card {
+  background: #23272f;
+  color: #f3f4f6;
+}
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.main-sections {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.left-col {
+  flex: 1 1 320px;
+  min-width: 300px;
+  max-width: 400px;
+}
+.right-col {
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 900px) {
+  .main-sections {
+    flex-direction: column;
+    gap: 0;
+  }
+  .right-col {
+    gap: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container, .profile-card, .section-card {
+    max-width: 98vw;
+    padding: 18px 4vw;
+  }
+  .search-bar {
+    max-width: 98vw;
+  }
+}
