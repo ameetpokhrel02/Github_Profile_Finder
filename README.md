@@ -1,4 +1,5 @@
 # GitHub Profile Finder
+![image](https://github.com/user-attachments/assets/6bc189e2-05dc-4fef-9966-da6b9c0ee1a6)
 
 A modern, responsive React app to search and view GitHub user profiles, repositories, and followers with dark mode and rate-limit-friendly GitHub token support.
 
