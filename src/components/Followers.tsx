@@ -1,6 +1,7 @@
 import React from 'react';
 import { GitHubFollower } from '../types/github';
 
+// shows the followers of the user
 interface FollowersProps {
   followers: GitHubFollower[];
 }
